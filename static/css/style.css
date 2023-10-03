@@ -1,0 +1,204 @@
+/* Variables (if defined) */
+:root {
+    --border-color: black;
+    --background-color: whitesmoke;
+    --button-bg-color: #3498db;
+    --button-text-color: #fff;
+    --button-hover-bg-color: #2980b9;
+  }
+  .content {
+    width: 300px; /* Set the width to your desired size */
+    padding: 20px;
+    text-align: center;
+    background-color: hsl(0, 0%, 94%); /* Light gray background color */
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+body {
+    background-image: url('https://thumbs.dreamstime.com/z/chat-room-three-yellow-signs-blue-sky-background-chat-room-three-yellow-signs-blue-sky-background-211835953.jpg'); /* Replace 'your-image-url.jpg' with the URL of your background image */
+    background-size: cover; /* Adjust how the image covers the background */
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0; /* Background color for the entire page */
+    min-height: 100vh;
+    margin: 0;
+    border: 2px solid black;
+}
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .contents {
+    width: 100vw; /* 100% of the viewport width */
+    height: 100vh; /* 100% of the viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+  
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .join {
+    width: 100%;
+    color: var(--button-text-color);
+    border-radius: 5px;
+    text-align: center;
+  } 
+  .join-button {
+    width: 100%;
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    padding: 12px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .join-button:hover {
+    background-color: var(--button-hover-bg-color);
+  }
+  
+  .create-btn {
+    width: 100%;
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    padding: 12px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .create-btn:hover {
+    background-color: var(--button-hover-bg-color);
+  }
+  
+  .message-box {
+    border-color: var(--border-color);
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    background-color: var(--background-color);
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    align-items: stretch;
+  }
+  
+  .messages {
+    overflow-y: scroll;
+    flex: 1;
+    width: 100%;
+    padding: 10px; /* Add padding to create space around message boxes */
+  }
+  
+  .messages::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  .messages::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 5px;
+  }
+  
+  /* CSS for making elements more attractive */
+h2 {
+    text-align: center;
+    font-size: 32px; /* Adjust the font size as needed */
+    font-weight: bold;
+    background-color: #f0f0f0; /* Add a subtle background color */
+    padding: 10px; /* Add padding for spacing */
+    border-radius: 10px; /* Add rounded corners */
+    
+  }
+  
+  .inputs {
+    padding: 10px;
+    display: flex;
+    background-color: #fff; /* Add a white background color */
+    border: 1px solid #ccc; /* Add a subtle border */
+    border-radius: 5px; /* Add rounded corners */
+
+    
+  }
+  
+  #message {
+    flex: 1;
+    border: none; /* Remove the border for the input field */
+    padding: 8px; /* Adjust the padding as needed */
+    outline: none; /* Remove the input outline on focus (optional) */
+    
+  }
+  
+  #send-btn {
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    padding: 8px 16px; /* Adjust padding as needed */
+    border-radius: 5px; /* Add rounded corners */
+  }
+  
+  .text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px; /* Add padding for spacing */
+    background-color: #f9f9f9; /* Add a light background color */
+    border-radius: 5px; /* Add rounded corners */
+  }
+  
+  .muted {
+    font-size: 12px;
+    color: #888; /* Use a slightly darker color for muted text */
+  }
+  
+ /* Apply a background color to the chat room */
+ /* Apply a background color to the chat room */
+.message-box {
+  border-radius: 10px; /* Add rounded corners */
+  background-clip: padding-box; /* Apply the background color inside the border */
+  background-color: hsl(108, 78%, 37%); /* Replace with your desired background color */
+  background-image: url('https://img.freepik.com/premium-photo/3d-illustration-multiple-speech-bubbles-speech-conversation-3d-icon-wallpaper_249854-583.jpg'); /* Replace 'your-image-url.jpg' with the actual image URL */
+  background-size: cover; /* Adjust how the image fits within the element */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  width: 100%; /* Adjust the width to cover the entire viewport width */
+  height: 100vh; /* Adjust the height to cover the entire viewport height */
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Rest of your CSS rules */
+
+
+
+
+  .text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px; /* Add padding for spacing inside the message box */
+    background-color: #f9f9f9; /* Add a light background color */
+    border-radius: 5px; /* Add rounded corners */
+    margin-bottom: 20px; /* Increase margin to create more space between message boxes */
+
+  }
+
+  
+  
